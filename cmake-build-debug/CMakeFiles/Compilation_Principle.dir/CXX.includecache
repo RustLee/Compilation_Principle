@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Clion/Compilation_Principle/Ex01/token.cpp
+iostream
+-
+cstdio
+-
+cstring
+-
+cstdlib
+-
+fstream
+-
+
