@@ -26,3 +26,8 @@
 |        | -=     | 44     |      | ?:   | 41     |        |          |        |
 |        | =      | 21     |      | +=   | 42     |        |          |        |
 
+语法分析器
+
+![LR1状态机](C:\Users\tuohuang\Desktop\LR1状态机.png)
+
+![Snipaste_2020-11-24_12-35-11](C:\Users\tuohuang\Desktop\Snipaste_2020-11-24_12-35-11.png)

@@ -1,0 +1,152 @@
+LR1Items 0:
+A->.E,$   E->.E+T,$   E->.E-T,$   E->.T,$   E->.E+T,+   E->.E-T,+   E->.T,+   E->.E+T,-   E->.E-T,-   E->.T,-   T->.T*F,
+$   T->.T/F,$   T->.F,$   T->.T*F,+   T->.T/F,+   T->.F,+   T->.T*F,-   T->.T/F,-   T->.F,-   T->.T*F,*   T->.T/F,*   T-
+>.F,*   T->.T*F,/   T->.T/F,/   T->.F,/   F->.(E),$   F->.n,$   F->.(E),+   F->.n,+   F->.(E),-   F->.n,-   F->.(E),*
+F->.n,*   F->.(E),/   F->.n,/
+to 1 using n
+to 2 using (
+to 3 using E
+to 4 using T
+to 5 using F
+LR1Items 1:
+F->n.,$   F->n.,+   F->n.,-   F->n.,*   F->n.,/
+LR1Items 2:
+F->(.E),$   F->(.E),+   F->(.E),-   F->(.E),*   F->(.E),/   E->.E+T,)   E->.E-T,)   E->.T,)   E->.E+T,+   E->.E-T,+   E-
+>.T,+   E->.E+T,-   E->.E-T,-   E->.T,-   T->.T*F,)   T->.T/F,)   T->.F,)   T->.T*F,+   T->.T/F,+   T->.F,+   T->.T*F,-
+  T->.T/F,-   T->.F,-   T->.T*F,*   T->.T/F,*   T->.F,*   T->.T*F,/   T->.T/F,/   T->.F,/   F->.(E),)   F->.n,)   F->.(E
+),+   F->.n,+   F->.(E),-   F->.n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 6 using n
+to 7 using (
+to 8 using E
+to 9 using T
+to 10 using F
+LR1Items 3:
+A->E.,$   E->E.+T,$   E->E.-T,$   E->E.+T,+   E->E.-T,+   E->E.+T,-   E->E.-T,-
+to 11 using +
+to 12 using -
+LR1Items 4:
+E->T.,$   E->T.,+   E->T.,-   T->T.*F,$   T->T./F,$   T->T.*F,+   T->T./F,+   T->T.*F,-   T->T./F,-   T->T.*F,*   T->T./
+F,*   T->T.*F,/   T->T./F,/
+to 13 using *
+to 14 using /
+LR1Items 5:
+T->F.,$   T->F.,+   T->F.,-   T->F.,*   T->F.,/
+LR1Items 6:
+F->n.,)   F->n.,+   F->n.,-   F->n.,*   F->n.,/
+LR1Items 7:
+F->(.E),)   F->(.E),+   F->(.E),-   F->(.E),*   F->(.E),/   E->.E+T,)   E->.E-T,)   E->.T,)   E->.E+T,+   E->.E-T,+   E-
+>.T,+   E->.E+T,-   E->.E-T,-   E->.T,-   T->.T*F,)   T->.T/F,)   T->.F,)   T->.T*F,+   T->.T/F,+   T->.F,+   T->.T*F,-
+  T->.T/F,-   T->.F,-   T->.T*F,*   T->.T/F,*   T->.F,*   T->.T*F,/   T->.T/F,/   T->.F,/   F->.(E),)   F->.n,)   F->.(E
+),+   F->.n,+   F->.(E),-   F->.n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 6 using n
+to 7 using (
+to 15 using E
+to 9 using T
+to 10 using F
+LR1Items 8:
+F->(E.),$   F->(E.),+   F->(E.),-   F->(E.),*   F->(E.),/   E->E.+T,)   E->E.-T,)   E->E.+T,+   E->E.-T,+   E->E.+T,-
+E->E.-T,-
+to 16 using +
+to 17 using -
+to 18 using )
+LR1Items 9:
+E->T.,)   E->T.,+   E->T.,-   T->T.*F,)   T->T./F,)   T->T.*F,+   T->T./F,+   T->T.*F,-   T->T./F,-   T->T.*F,*   T->T./
+F,*   T->T.*F,/   T->T./F,/
+to 19 using *
+to 20 using /
+LR1Items 10:
+T->F.,)   T->F.,+   T->F.,-   T->F.,*   T->F.,/
+LR1Items 11:
+E->E+.T,$   E->E+.T,+   E->E+.T,-   T->.T*F,$   T->.T/F,$   T->.F,$   T->.T*F,+   T->.T/F,+   T->.F,+   T->.T*F,-   T->.
+T/F,-   T->.F,-   T->.T*F,*   T->.T/F,*   T->.F,*   T->.T*F,/   T->.T/F,/   T->.F,/   F->.(E),$   F->.n,$   F->.(E),+
+F->.n,+   F->.(E),-   F->.n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 1 using n
+to 2 using (
+to 21 using T
+to 5 using F
+LR1Items 12:
+E->E-.T,$   E->E-.T,+   E->E-.T,-   T->.T*F,$   T->.T/F,$   T->.F,$   T->.T*F,+   T->.T/F,+   T->.F,+   T->.T*F,-   T->.
+T/F,-   T->.F,-   T->.T*F,*   T->.T/F,*   T->.F,*   T->.T*F,/   T->.T/F,/   T->.F,/   F->.(E),$   F->.n,$   F->.(E),+
+F->.n,+   F->.(E),-   F->.n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 1 using n
+to 2 using (
+to 22 using T
+to 5 using F
+LR1Items 13:
+T->T*.F,$   T->T*.F,+   T->T*.F,-   T->T*.F,*   T->T*.F,/   F->.(E),$   F->.n,$   F->.(E),+   F->.n,+   F->.(E),-   F->.
+n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 1 using n
+to 2 using (
+to 23 using F
+LR1Items 14:
+T->T/.F,$   T->T/.F,+   T->T/.F,-   T->T/.F,*   T->T/.F,/   F->.(E),$   F->.n,$   F->.(E),+   F->.n,+   F->.(E),-   F->.
+n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 1 using n
+to 2 using (
+to 24 using F
+LR1Items 15:
+F->(E.),)   F->(E.),+   F->(E.),-   F->(E.),*   F->(E.),/   E->E.+T,)   E->E.-T,)   E->E.+T,+   E->E.-T,+   E->E.+T,-
+E->E.-T,-
+to 16 using +
+to 17 using -
+to 25 using )
+LR1Items 16:
+E->E+.T,)   E->E+.T,+   E->E+.T,-   T->.T*F,)   T->.T/F,)   T->.F,)   T->.T*F,+   T->.T/F,+   T->.F,+   T->.T*F,-   T->.
+T/F,-   T->.F,-   T->.T*F,*   T->.T/F,*   T->.F,*   T->.T*F,/   T->.T/F,/   T->.F,/   F->.(E),)   F->.n,)   F->.(E),+
+F->.n,+   F->.(E),-   F->.n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 6 using n
+to 7 using (
+to 26 using T
+to 10 using F
+LR1Items 17:
+E->E-.T,)   E->E-.T,+   E->E-.T,-   T->.T*F,)   T->.T/F,)   T->.F,)   T->.T*F,+   T->.T/F,+   T->.F,+   T->.T*F,-   T->.
+T/F,-   T->.F,-   T->.T*F,*   T->.T/F,*   T->.F,*   T->.T*F,/   T->.T/F,/   T->.F,/   F->.(E),)   F->.n,)   F->.(E),+
+F->.n,+   F->.(E),-   F->.n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 6 using n
+to 7 using (
+to 27 using T
+to 10 using F
+LR1Items 18:
+F->(E).,$   F->(E).,+   F->(E).,-   F->(E).,*   F->(E).,/
+LR1Items 19:
+T->T*.F,)   T->T*.F,+   T->T*.F,-   T->T*.F,*   T->T*.F,/   F->.(E),)   F->.n,)   F->.(E),+   F->.n,+   F->.(E),-   F->.
+n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 6 using n
+to 7 using (
+to 28 using F
+LR1Items 20:
+T->T/.F,)   T->T/.F,+   T->T/.F,-   T->T/.F,*   T->T/.F,/   F->.(E),)   F->.n,)   F->.(E),+   F->.n,+   F->.(E),-   F->.
+n,-   F->.(E),*   F->.n,*   F->.(E),/   F->.n,/
+to 6 using n
+to 7 using (
+to 29 using F
+LR1Items 21:
+E->E+T.,$   E->E+T.,+   E->E+T.,-   T->T.*F,$   T->T./F,$   T->T.*F,+   T->T./F,+   T->T.*F,-   T->T./F,-   T->T.*F,*
+T->T./F,*   T->T.*F,/   T->T./F,/
+to 13 using *
+to 14 using /
+LR1Items 22:
+E->E-T.,$   E->E-T.,+   E->E-T.,-   T->T.*F,$   T->T./F,$   T->T.*F,+   T->T./F,+   T->T.*F,-   T->T./F,-   T->T.*F,*
+T->T./F,*   T->T.*F,/   T->T./F,/
+to 13 using *
+to 14 using /
+LR1Items 23:
+T->T*F.,$   T->T*F.,+   T->T*F.,-   T->T*F.,*   T->T*F.,/
+LR1Items 24:
+T->T/F.,$   T->T/F.,+   T->T/F.,-   T->T/F.,*   T->T/F.,/
+LR1Items 25:
+F->(E).,)   F->(E).,+   F->(E).,-   F->(E).,*   F->(E).,/
+LR1Items 26:
+E->E+T.,)   E->E+T.,+   E->E+T.,-   T->T.*F,)   T->T./F,)   T->T.*F,+   T->T./F,+   T->T.*F,-   T->T./F,-   T->T.*F,*
+T->T./F,*   T->T.*F,/   T->T./F,/
+to 19 using *
+to 20 using /
+LR1Items 27:
+E->E-T.,)   E->E-T.,+   E->E-T.,-   T->T.*F,)   T->T./F,)   T->T.*F,+   T->T./F,+   T->T.*F,-   T->T./F,-   T->T.*F,*
+T->T./F,*   T->T.*F,/   T->T./F,/
+to 19 using *
+to 20 using /
+LR1Items 28:
+T->T*F.,)   T->T*F.,+   T->T*F.,-   T->T*F.,*   T->T*F.,/
+LR1Items 29:
+T->T/F.,)   T->T/F.,+   T->T/F.,-   T->T/F.,*   T->T/F.,/

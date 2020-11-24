@@ -1,3 +1,0 @@
-"D:\Clion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Compilation_Principle.dir/objects.a
-D:\QT\Tools\mingw730_64\bin\ar.exe cr CMakeFiles\Compilation_Principle.dir/objects.a @CMakeFiles\Compilation_Principle.dir\objects1.rsp
-D:\QT\Tools\mingw730_64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Compilation_Principle.dir/objects.a -Wl,--no-whole-archive  -o Compilation_Principle.exe -Wl,--out-implib,libCompilation_Principle.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Compilation_Principle.dir\linklibs.rsp

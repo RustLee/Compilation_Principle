@@ -1,0 +1,3 @@
+D:/Clion/Compilation_Principle/Ex02/syntax_analysis/cmake-build-debug/CMakeFiles/syntax_analysis.dir
+D:/Clion/Compilation_Principle/Ex02/syntax_analysis/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Clion/Compilation_Principle/Ex02/syntax_analysis/cmake-build-debug/CMakeFiles/rebuild_cache.dir

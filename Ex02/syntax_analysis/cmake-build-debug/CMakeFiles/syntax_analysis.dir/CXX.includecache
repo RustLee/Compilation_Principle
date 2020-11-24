@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Clion/Compilation_Principle/Ex02/syntax_analysis/syntax_analysis.cpp
+cstdio
+-
+vector
+-
+string
+-
+iostream
+-
+map
+-
+set
+-
+stack
+-
+queue
+-
+

@@ -1,0 +1,3 @@
+"D:\Clion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\token.dir/objects.a
+D:\QT\Tools\mingw730_64\bin\ar.exe cr CMakeFiles\token.dir/objects.a @CMakeFiles\token.dir\objects1.rsp
+D:\QT\Tools\mingw730_64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\token.dir/objects.a -Wl,--no-whole-archive  -o token.exe -Wl,--out-implib,libtoken.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\token.dir\linklibs.rsp

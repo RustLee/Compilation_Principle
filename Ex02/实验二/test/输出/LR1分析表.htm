@@ -1,0 +1,954 @@
+<html>
+<head>
+<title>LR1分析表</title>
+</head>
+<body>
+<p align="center">LR1分析表</p>
+<table border="1">
+<tr>
+<td rowspan="2" nowrap><p align="center">状态</p></td>
+<td colspan="8" nowrap><p align="center">ACTION</p></td>
+<td colspan="3" nowrap><p align="center">GOTO</p></td>
+</tr>
+<tr>
+<td nowrap>n</td>
+<td nowrap>+</td>
+<td nowrap>-</td>
+<td nowrap>*</td>
+<td nowrap>/</td>
+<td nowrap>(</td>
+<td nowrap>)</td>
+<td nowrap>$</td>
+<td nowrap>E</td>
+<td nowrap>T</td>
+<td nowrap>F</td>
+</tr>
+<tr>
+<td nowrap>0</td>
+<td nowrap>shift&nbsp;4</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;5</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>1</td>
+<td nowrap>2</td>
+<td nowrap>3</td>
+</tr>
+<tr>
+<td nowrap>1</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;6</td>
+<td nowrap>shift&nbsp;7</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>accept</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>2</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;T</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;T</td>
+<td nowrap>shift&nbsp;8</td>
+<td nowrap>shift&nbsp;9</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;T</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>3</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>4</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>5</td>
+<td nowrap>shift&nbsp;13</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;14</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>10</td>
+<td nowrap>11</td>
+<td nowrap>12</td>
+</tr>
+<tr>
+<td nowrap>6</td>
+<td nowrap>shift&nbsp;4</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;5</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>15</td>
+<td nowrap>3</td>
+</tr>
+<tr>
+<td nowrap>7</td>
+<td nowrap>shift&nbsp;4</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;5</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>16</td>
+<td nowrap>3</td>
+</tr>
+<tr>
+<td nowrap>8</td>
+<td nowrap>shift&nbsp;4</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;5</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>17</td>
+</tr>
+<tr>
+<td nowrap>9</td>
+<td nowrap>shift&nbsp;4</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;5</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>18</td>
+</tr>
+<tr>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>11</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;T</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;T</td>
+<td nowrap>shift&nbsp;22</td>
+<td nowrap>shift&nbsp;23</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;T</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>12</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>13</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;n</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>14</td>
+<td nowrap>shift&nbsp;13</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;14</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>24</td>
+<td nowrap>11</td>
+<td nowrap>12</td>
+</tr>
+<tr>
+<td nowrap>15</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;+&nbsp;T</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;+&nbsp;T</td>
+<td nowrap>shift&nbsp;8</td>
+<td nowrap>shift&nbsp;9</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;+&nbsp;T</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>16</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;-&nbsp;T</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;-&nbsp;T</td>
+<td nowrap>shift&nbsp;8</td>
+<td nowrap>shift&nbsp;9</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;-&nbsp;T</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>17</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>18</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>19</td>
+<td nowrap>shift&nbsp;13</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;14</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>25</td>
+<td nowrap>12</td>
+</tr>
+<tr>
+<td nowrap>20</td>
+<td nowrap>shift&nbsp;13</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;14</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>26</td>
+<td nowrap>12</td>
+</tr>
+<tr>
+<td nowrap>21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>22</td>
+<td nowrap>shift&nbsp;13</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;14</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>27</td>
+</tr>
+<tr>
+<td nowrap>23</td>
+<td nowrap>shift&nbsp;13</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;14</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>28</td>
+</tr>
+<tr>
+<td nowrap>24</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;29</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>25</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;+&nbsp;T</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;+&nbsp;T</td>
+<td nowrap>shift&nbsp;22</td>
+<td nowrap>shift&nbsp;23</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;+&nbsp;T</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>26</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;-&nbsp;T</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;-&nbsp;T</td>
+<td nowrap>shift&nbsp;22</td>
+<td nowrap>shift&nbsp;23</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;E&nbsp;->&nbsp;E&nbsp;-&nbsp;T</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>27</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;*&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>28</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;T&nbsp;->&nbsp;T&nbsp;/&nbsp;F</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>29</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;F&nbsp;->&nbsp;(&nbsp;E&nbsp;)</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+</table>
+<br>
+<br>
+项目集规范族：<br>
+<br>
+I0:<br>
+A&nbsp;->&nbsp;.&nbsp;E&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;+&nbsp;T&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;-&nbsp;T&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;.&nbsp;T&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;+&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;-&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;.&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;+&nbsp;T&nbsp;,&nbsp;-<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;-&nbsp;T&nbsp;,&nbsp;-<br>
+E&nbsp;->&nbsp;.&nbsp;T&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I1:<br>
+A&nbsp;->&nbsp;E&nbsp;.&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;+&nbsp;T&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;-&nbsp;T&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;+&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;-&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;+&nbsp;T&nbsp;,&nbsp;-<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;-&nbsp;T&nbsp;,&nbsp;-<br>
+<br>
+I2:<br>
+E&nbsp;->&nbsp;T&nbsp;.&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;T&nbsp;.&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;T&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+<br>
+I3:<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+I4:<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+I5:<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;+&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;-&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;.&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;+&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;-&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;.&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;+&nbsp;T&nbsp;,&nbsp;-<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;-&nbsp;T&nbsp;,&nbsp;-<br>
+E&nbsp;->&nbsp;.&nbsp;T&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I6:<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;.&nbsp;T&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;.&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;.&nbsp;T&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I7:<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;.&nbsp;T&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;.&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;.&nbsp;T&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I8:<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I9:<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I10:<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;/<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;+&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;-&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;+&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;-&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;+&nbsp;T&nbsp;,&nbsp;-<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;-&nbsp;T&nbsp;,&nbsp;-<br>
+<br>
+I11:<br>
+E&nbsp;->&nbsp;T&nbsp;.&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;T&nbsp;.&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;T&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+<br>
+I12:<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;F&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+I13:<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;n&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+I14:<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;(&nbsp;.&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;+&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;-&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;.&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;+&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;-&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;.&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;+&nbsp;T&nbsp;,&nbsp;-<br>
+E&nbsp;->&nbsp;.&nbsp;E&nbsp;-&nbsp;T&nbsp;,&nbsp;-<br>
+E&nbsp;->&nbsp;.&nbsp;T&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I15:<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;T&nbsp;.&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;T&nbsp;.&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;T&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+<br>
+I16:<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;T&nbsp;.&nbsp;,&nbsp;$<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;T&nbsp;.&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;T&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+<br>
+I17:<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+I18:<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;$<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+I19:<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;.&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;.&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;.&nbsp;T&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I20:<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;.&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;.&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;.&nbsp;T&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;T&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I21:<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;$<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+I22:<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I23:<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;.&nbsp;F&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;.&nbsp;(&nbsp;E&nbsp;)&nbsp;,&nbsp;/<br>
+F&nbsp;->&nbsp;.&nbsp;n&nbsp;,&nbsp;/<br>
+<br>
+I24:<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;.&nbsp;)&nbsp;,&nbsp;/<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;+&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;-&nbsp;T&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;+&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;-&nbsp;T&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;+&nbsp;T&nbsp;,&nbsp;-<br>
+E&nbsp;->&nbsp;E&nbsp;.&nbsp;-&nbsp;T&nbsp;,&nbsp;-<br>
+<br>
+I25:<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;T&nbsp;.&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;T&nbsp;.&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;+&nbsp;T&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+<br>
+I26:<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;T&nbsp;.&nbsp;,&nbsp;)<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;T&nbsp;.&nbsp;,&nbsp;+<br>
+E&nbsp;->&nbsp;E&nbsp;-&nbsp;T&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;*&nbsp;F&nbsp;,&nbsp;/<br>
+T&nbsp;->&nbsp;T&nbsp;.&nbsp;/&nbsp;F&nbsp;,&nbsp;/<br>
+<br>
+I27:<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;*&nbsp;F&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+I28:<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;)<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;+<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;-<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;*<br>
+T&nbsp;->&nbsp;T&nbsp;/&nbsp;F&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+I29:<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;)<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;+<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;-<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;*<br>
+F&nbsp;->&nbsp;(&nbsp;E&nbsp;)&nbsp;.&nbsp;,&nbsp;/<br>
+<br>
+</body>
+</html>
